@@ -175,10 +175,10 @@ class simple_GC_DEC(nn.Module):
         print("MP_MIM_SpaGCN. Start Time: %s seconds" %
           (start_time))
         #MP_parameter_set
-        #MP_k_num_list = [1,2,3,4,5,6,7,8,9]
-        #MP_l_num_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-        MP_k_num_list = [1]
-        MP_l_num_list = [1]
+        MP_k_num_list = [1,2,3,4,5,6,7,8,9]
+        MP_l_num_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+        #MP_k_num_list = [1]
+        #MP_l_num_list = [1]
         embedding_MIrow_max_list = []
         
         meta_folder_path = os.path.abspath('./meta_data_folder/metaData_brain_16_coords')
