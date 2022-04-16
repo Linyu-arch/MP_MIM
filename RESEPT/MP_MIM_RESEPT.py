@@ -271,7 +271,7 @@ if __name__ == '__main__':
             adj_self_loop = preprocess_graph_self_loop(adj)
             graph_embedding_whole = forward_gat_multi_layer(adj_self_loop, native_embedding_whole, l_num)
             graph_embedding_add_barcode_df = pd.DataFrame(graph_embedding_whole, index=embedding_celllist, columns=['embedding0','embedding1','embedding2'])
-            graph_embedding_add_barcode_df.to_csv(embedding_in_RESEPT_folder+sample+'_'+str(count)+'_raw_res0.3_euclidean_NA_dummy_add_PEalpha'+str(PEalphaList[i])+'_k6_NA_zdim'+str(zdimList[j])+'_gat_self_loop_euc_graphK'+str(knn_graph_k_num)+'_layer'+str(l_num)+'_embedding.csv')
+            graph_embedding_add_barcode_df.to_csv(embedding_in_RESEPT_folder+sample+'_'+str(count)+'_raw_res0.3_euclidean_NA_dummy_add_PEalpha'+str(PEalphaList[i])+'_k6_NA_zdim'+str(zdimList[j])+'_gat_self_loop_euc_graphK'+str(knn_graph_k_num)+'_layer'+str(l_num)+'_graph_embedding.csv')
             graph_embedding_remove_zero_df = graph_embedding_add_barcode_df.loc[~(graph_embedding_add_barcode_df==0).all(axis=1)]
             #print(graph_embedding_remove_zero_df)
             graph_embedding_remove_zero_whole = graph_embedding_remove_zero_df[['embedding0','embedding1','embedding2']].values
