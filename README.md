@@ -89,8 +89,7 @@ More information can be checked at the [tutorial](https://github.com/YuLin-code/
 
 ## References:
 
-1. VAE <https://github.com/pytorch/examples/tree/master/vae>
-2. GAE <https://github.com/tkipf/gae/tree/master/gae>
-3. Moran’s I and Geary's C <https://github.com/pysal>
-4. RESEPT <https://github.com/OSU-BMBL/RESEPT>
-5. SpaGCN <https://github.com/jianhuupenn/SpaGCN>
+1. GAT <https://github.com/Diego999/pyGAT>
+2. Moran’s I and Geary's C <https://github.com/pysal>
+3. RESEPT <https://github.com/OSU-BMBL/RESEPT>
+4. SpaGCN <https://github.com/jianhuupenn/SpaGCN>
