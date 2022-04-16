@@ -50,7 +50,7 @@ if __name__ == '__main__':
     raw_embedding_kmeans_ari_result_order = raw_embedding_kmeans_ari_result_name_init_np_int[np.argsort(raw_embedding_kmeans_ari_result_name_init_np_int[:,0])][:,1]
     
     # Spearman Correlation
-    MP_MIM_csv = sample+'_gat_self_loop_euc_knn_graph_K'+str(k_num_distance_att)+'_layer'+str(layer_num_distance_att)+'_multi_layer_MIrow_max.csv'
+    MP_MIM_csv = sample+'_gat_self_loop_euc_knn_graph_K'+str(k_num_distance_att)+'_layer'+str(layer_num_distance_att)+'_MP_MIM.csv'
     MP_MIM_result_df = pd.read_csv('./'+MP_MIM_csv,index_col=0)
     MP_MIM_result = MP_MIM_result_df.T.values[1,:]
     MP_MIM_result_sort_descending = pd.DataFrame(MP_MIM_result.reshape(-1,len(MP_MIM_result)),columns=legend_name_list).sort_values(by=0,axis=1,ascending=False)
