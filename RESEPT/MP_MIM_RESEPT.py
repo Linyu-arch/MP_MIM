@@ -288,7 +288,7 @@ if __name__ == '__main__':
             embedding_MIrow_list_np = np.array(embedding_MIrow_list)
             embedding_MIrow_max_list.append(np.max(embedding_MIrow_list_np))
     ####save_result
-    MIrow_result_gat_euc_df = pd.DataFrame({'embedding_name':embedding_name_list,'embedding_MI_output':embedding_MIrow_max_list})
+    MIrow_result_gat_euc_df = pd.DataFrame({'embedding_name':embedding_name_list,'embedding_MP_MIM':embedding_MIrow_max_list})
     MIrow_result_gat_euc_df.to_csv(sample+'_gat_self_loop_euc_knn_graph_K'+str(k_num_distance_att_list[8])+'_layer'+str(layer_num_distance_att_list[14])+'_MP_MIM.csv')
 
     end_time = time.time()
