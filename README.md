@@ -28,7 +28,7 @@ git clone https://github.com/YuLin-code/MP-MIM.git
 MP-MIM mainly depends on the Python (3.6+) scientific stack and python virutal environment with conda (<https://anaconda.org/>) is recommended.
 
 ```shell
-conda create -n MP_MIM python=3.8.8
+conda create -n MP_MIM python=3.8
 conda activate MP_MIM
 pip install -r requirements.txt
 ```
