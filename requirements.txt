@@ -12,3 +12,8 @@ scikit-image==0.18.1
 umap-learn==0.5.1
 anndata==0.7.5
 opencv-python==4.5.3.56
+graphtools==1.4.0
+tasklogger==1.0.0
+scprep==1.0.0
+python-igraph==0.9.1
+louvain==0.7.0
