@@ -21,6 +21,7 @@ MP-MIM can run on both Linux and Windows. The package has been tested on the Lin
 
 ```bash
 git clone https://github.com/YuLin-code/MP-MIM.git
+cd MP-MIM
 ```
 
 ### Python Dependencies: 
