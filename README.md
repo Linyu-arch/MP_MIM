@@ -4,7 +4,7 @@
 
 MP-MIM is a novel embedding evaluation method that employs a graph convolution way for message passing and spatial autocorrelation index to evaluate embeddings from deep learning models used for spatial transcriptomics analysis. It can accurately evaluate multiple embeddings with different hyperparameter settings and identify high-quality embeddings by producing a high correlation between the predicted spatial architecture and the ground truth. The main workflow of MP-MIM is shown as follows:
 
-![MP-MIM workflow](docs/images/workflow.jpg)
+![MP-MIM workflow](docs/images/workflow.tif)
 As shown in (A), (B), and (C), the process starts from converting the input to KNN-Graph data with a graph structure. Message passing based on graph convolution transforms the native embedding with KNN-Graph structure to graph embedding. The multiple transformed embeddings are evaluated by Moran’s I with maximum filtering based on all the dimensions of each embedding. Finally, the graph embeddings and quality ranking are output for the downstream analysis in their respective models.
 
 --------------------------------------------------------------------------------
