@@ -1,6 +1,6 @@
 # Tutorial of MP-MIM 
 
-## An evaluation method for single-cell spatial data embedding in tissue architecture identification
+## Sampling and ranking spatial transcriptomics data embeddings in tissue architecture identification
 
 MP-MIM is a novel embedding evaluation method that employs a graph convolution way for message passing and spatial autocorrelation index to evaluate embeddings from deep learning models used for spatial transcriptomics analysis. It can accurately evaluate multiple embeddings with different hyperparameter settings and identify high-quality embeddings by producing a high correlation between the predicted spatial architecture and the ground truth.
 
