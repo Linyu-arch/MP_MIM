@@ -275,7 +275,6 @@ class simple_GC_DEC(nn.Module):
         adj=torch.FloatTensor(adj)
         self.trajectory.append(y_pred)
         #features=pd.DataFrame(features.detach().numpy(),index=np.arange(0,features.shape[0]))
-        #features=pd.DataFrame(features_graph_np,index=np.arange(0,features.shape[0]))                                         #add MP
         features=pd.DataFrame(graph_embedding_np,index=np.arange(0,features.shape[0]))                                         #add MP modify
         print(features)
         Group=pd.Series(y_pred,index=np.arange(0,features.shape[0]),name="Group")
@@ -454,5 +453,3 @@ class GC_DEC(nn.Module):
     def predict(self, X, adj):
         z,q = self(torch.FloatTensor(X),torch.FloatTensor(adj))
         return z, q
-
-
